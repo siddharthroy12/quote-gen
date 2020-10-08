@@ -1,0 +1,55 @@
+
+#quote-box-wrapper {
+    height:100vh;
+}
+
+#quote-box {
+    width:700px;
+    height:350px;
+    text-align: center;
+}
+
+#author {
+    text-align:right;
+}
+
+.card-body {
+    padding:2rem;
+}
+
+#text {
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+#author {
+    font-size: 1.5rem;
+    padding-right: 40px;
+}
+#buttons {
+    margin-top: auto;
+}
+.btn {
+    border-radius: 2px;
+}
+
+#credit {
+    margin-top:10px;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px) {
+    #quote-box {
+        width:100%;
+    }
+
+    #text {
+        font-size:3rem;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    #text {
+        font-size:2rem;
+    }
+}

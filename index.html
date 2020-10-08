@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Load Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Load Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- My css and javascript -->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/app.js"></script>
+    <title>Get Quotes!</title>
+</head>
+<body>
+    <!-- This CDN wasn't working in the head so I moved it here -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="quote-box-wrapper" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="card" id="quote-box">
+            <div class="card-body d-flex flex-column">
+                <h1 class="card-title" id="text">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <span id=quote></span>
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                </h1>
+                <p class="card-text" id="author">- quote-generator</p>
+                <div class="d-flex justify-content-between" id="buttons">
+                    <a type="button" class="btn btn-secondary" id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank">
+                        Tweet
+                    </a>
+                    <button type="button" class="btn btn-primary" id="new-quote" onclick="applyColorAndQuote()">
+                        New Quote
+                    </button>
+                </div>
+            </div>  
+        </div>
+        <p id="credit">By Siddharth Roy</p>
+    </div>
+</body>
+</html>
